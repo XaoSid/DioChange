@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="img">
+            <img src="img/question.png" alt="DioGenderChange" id="imagem" style="width: 50%; height: 80% ;">
+        </div>
+        <div class="botao">
+            <button class="input" onclick="femaleDio()">Female</button>
+            <button class="input" onclick="reset()">Reset</button>
+            <button class="input" onclick="maleDio()">Male</button>
+        </div>
+    </section>
+    <script>
+     function femaleDio(){
+         let muda = document.querySelector('#imagem')
+         muda.src = 'img/female-Dio.png'
+         return muda
+     }
+
+     function maleDio(){
+         muda = document.querySelector("#imagem")
+         muda.src = "img/Dio.png"
+         return muda
+     }
+
+     function reset(){
+         muda = document.querySelector('#imagem')
+         muda.src = 'img/question.png'
+         return muda
+     }
+    </script>
+
+</body>
+</html>
